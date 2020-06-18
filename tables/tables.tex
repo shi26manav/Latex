@@ -1,0 +1,56 @@
+\documentclass{article}
+\begin{document}
+
+\title {Date , Tables, Float and the tabular Environment}
+\author{Toni}
+\date{\today} 
+
+
+\section{Introduction}
+
+\subsection{Learning Tables}
+\begin{tabular}{|c|c|}
+\hline \hline
+Name & Address \\
+\hline
+subject  & \\
+\hline 
+grade & Marks \\
+\hline \hline
+\end{tabular}
+
+%For spaces
+%\vspace{1cm}
+%\smallskip
+%\bigskip
+
+\subsection{Floating Tables}
+%htbp   h:here t:top b:bottom p:at top of nextpage
+\begin{table}[htbp]
+\caption{My GradeBook}
+\begin{center}
+
+\begin{tabular}{|c|c|}
+\hline 
+Name & Address \\
+\hline
+subject  & \\
+\hline 
+grade & Marks \\
+\hline 
+\end{tabular}
+
+\end{center}
+\label{tab:grades}
+\end{table}
+
+\subsection{References}
+
+You can see my grades in Table \ref{tab:grades}
+
+\section{Conclusion}
+Hey there, now I know how to create basic tables
+
+
+
+\end{document}
